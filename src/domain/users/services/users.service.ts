@@ -13,6 +13,7 @@ export class UsersService {
       schemaName: 'userRequest',
       instructions: 'Answer any user question',
       prompt: question,
+      tools: ['send-email', 'send-email-pdf', 'make-pdf'],
     });
     return object;
   }
